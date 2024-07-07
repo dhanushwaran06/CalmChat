@@ -19,6 +19,8 @@ header > div a {
   font-size: 17px;
   text-decoration: none;
   font-weight: 800;
+  text-transform: uppercase;
+  color: #202020;
 }
 
 li {

@@ -1,17 +1,12 @@
 import { Fragment } from "react/jsx-runtime";
 import "../Styles/Header.css";
 
-type Heade = {
-  link: any;
-  home: any;
-};
-
-export default function Header({ link, home: any, ...Head }) {
+export default function Header() {
   return (
     <Fragment>
       <header className="">
         <div>
-          <a href="">{link}</a>
+          <a href="">{"Calm | Chatbot"}</a>
         </div>
         <nav>
           <ul>
