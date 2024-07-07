@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Header from "./Components/Header/Header";
 import MainScreen from "./Components/MainScreen/MainScreen.";
 import "./Components/MainScreen/MobileScreen.css";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [data, setData] = useState("");
@@ -15,10 +16,12 @@ function App() {
 
   return (
     <div>
-      <Header link={"Calm Chat"} home={"/"} />
+      <Header />
       <MainScreen />
 
       <h2 className="text-3xl">{data}</h2>
+
+      <Footer />
     </div>
   );
 }
