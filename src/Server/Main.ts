@@ -4,8 +4,9 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors());
-app.get("/", (req: any, res: any) => {
-  res.send("Hello World This is Working...");
+
+app.get("/", (req: any, res: { send: (arg0: string) => void }) => {
+  res.send("");
 });
 
 app.listen(3000, () => {

@@ -1,6 +1,8 @@
 import Axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import Header from "./Components/Header/Header";
+import MainScreen from "./Components/MainScreen/MainScreen.";
 
 function App() {
   const [data, setData] = useState("");
@@ -10,7 +12,14 @@ function App() {
       .then((res) => setData(res));
   });
 
-  return <h2>{data}</h2>;
+  return (
+    <div>
+      <Header link={"Calm Chat"} home={"/"} />
+      <MainScreen />
+
+      <h2>{data}</h2>
+    </div>
+  );
 }
 
 export default App;
