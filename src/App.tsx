@@ -9,7 +9,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   const [data, setData] = useState("");
   useEffect(() => {
-    Axios.get("http://localhost:3000/")
+    Axios.get("http://www.localhost:3000/")
       .then((res) => res.data)
       .then((res) => setData(res));
   });
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <MainScreen />
 
-      <h2 className="text-3xl">{data}</h2>
+      {/* <h2 className="text-3xl">{data}</h2> */}
 
       <Footer />
     </div>

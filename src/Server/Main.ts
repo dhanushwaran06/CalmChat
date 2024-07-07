@@ -5,12 +5,8 @@ const cors = require("cors");
 
 app.use(cors());
 
-app.get("/", (req: any, res: { send: (arg0: string) => void }) => {
-  res.send("");
-});
-
-app.get("/Admin", (req, res) => {
-  res.send("Admin Page");
+app.get("/", (req, res) => {
+  res.send("Working...");
 });
 
 app.listen(3000, () => {

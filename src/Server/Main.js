@@ -3,10 +3,7 @@ var app = express();
 var cors = require("cors");
 app.use(cors());
 app.get("/", function (req, res) {
-    res.send("");
-});
-app.get("/Admin", function (req, res) {
-    res.send("Admin Page");
+    res.send("Working...");
 });
 app.listen(3000, function () {
     console.log("Working...");
