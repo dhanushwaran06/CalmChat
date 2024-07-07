@@ -1,0 +1,40 @@
+@media screen and (max-width: 320px) {
+  header li a {
+    display: none;
+  }
+
+  header > div a {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  header li a {
+    display: none;
+  }
+
+  header > div a {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  header li a {
+    display: none;
+  }
+
+  header > div a {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header li a {
+    display: none;
+  }
+
+  header > div a {
+    display: flex;
+    margin-left: auto;
+  }
+}

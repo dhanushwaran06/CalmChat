@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1.3rem;
+  background-color: rgb(29, 124, 189);
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div a {
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+li {
+  list-style-type: none;
+}
+
+header li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  margin: 1rem;
+  color: #202020;
+}
+
+header li a:hover {
+  border-bottom: 2px solid #202020;
+  transition: 1s ease-in;
+}

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Header from "./Components/Header/Header";
 import MainScreen from "./Components/MainScreen/MainScreen.";
+import "./Components/MainScreen/MobileScreen.css";
 
 function App() {
   const [data, setData] = useState("");
@@ -17,7 +18,7 @@ function App() {
       <Header link={"Calm Chat"} home={"/"} />
       <MainScreen />
 
-      <h2>{data}</h2>
+      <h2 className="text-3xl">{data}</h2>
     </div>
   );
 }
