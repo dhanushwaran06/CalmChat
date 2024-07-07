@@ -5,6 +5,8 @@ import Header from "./Components/Header/Header";
 import MainScreen from "./Components/MainScreen/MainScreen.";
 import "./Components/MainScreen/MobileScreen.css";
 import Footer from "./Components/Footer/Footer";
+import Inputs from "./Components/Inputs/Inputs";
+import Button from "./Components/Buttons/Buttons";
 
 function App() {
   const [data, setData] = useState("");
@@ -19,7 +21,17 @@ function App() {
       <Header />
       <MainScreen />
 
-      {/* <h2 className="text-3xl">{data}</h2> */}
+      <div>
+        <Inputs type={"text"} value={"Enter User Name: "} input={undefined} />
+
+        <Inputs
+          type={"password"}
+          value={"Enter Password: "}
+          input={undefined}
+        />
+
+        <Button text="Sign In" btn={undefined} />
+      </div>
 
       <Footer />
     </div>
