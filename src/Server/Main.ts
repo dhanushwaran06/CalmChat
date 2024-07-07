@@ -1,8 +1,11 @@
-import express from "express";
+const express = require("express");
 const app = express();
 
-app.get("/", () => {
-  alert("Working...");
+const cors = require("cors");
+
+app.use(cors());
+app.get("/", (req: any, res: any) => {
+  res.send("Hello World This is Working...");
 });
 
 app.listen(3000, () => {

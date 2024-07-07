@@ -1,8 +1,9 @@
 {
   "name": "calmchatbot",
   "private": true,
+  "proxy": "http://localhost:3000/",
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "server": "./Server/Main.js",
@@ -11,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
