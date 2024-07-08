@@ -1,12 +1,15 @@
-import Axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
-import Header from "./Components/Header/Header";
+import { Fragment } from "react/jsx-runtime";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
 import MainScreen from "./Components/MainScreen/MainScreen.";
 import "./Components/MainScreen/MobileScreen.css";
 import Footer from "./Components/Footer/Footer";
 import Inputs from "./Components/Inputs/Inputs";
 import Button from "./Components/Buttons/Buttons";
+import Axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+import Header from "./Components/Header/Header";
 
 function App() {
   const [data, setData] = useState("");

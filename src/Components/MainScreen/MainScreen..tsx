@@ -5,7 +5,7 @@ export default function MainScreen() {
   return (
     <Fragment>
       <div>
-        <h1>Welcome to: Calm | Chatbot</h1>
+        <h1>Welcome to: CalmBot</h1>
       </div>
     </Fragment>
   );
