@@ -1,0 +1,27 @@
+@media screen and (max-width: 500px) {
+  .Heading1 {
+    font-size: 22px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .Heading1 {
+    /* font-size: 20px; */
+    font-size: 22px;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Heading1 {
+    /* font-size: 0px; */
+    font-size: 22px;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Heading1 {
+    font-size: 22px;
+    padding: 1rem;
+  }
+}
