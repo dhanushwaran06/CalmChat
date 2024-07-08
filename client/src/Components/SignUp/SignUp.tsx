@@ -1,5 +1,5 @@
 import { Fragment } from "react/jsx-runtime";
-import Header from "../../Header/Header";
+import Header from "../../NavBar/NavBar";
 
 const SignUp = () => {
   return (
