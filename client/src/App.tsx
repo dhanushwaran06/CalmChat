@@ -1,42 +1,21 @@
-import { Fragment } from "react/jsx-runtime";
-import { BrowserRouter, Route } from "react-router-dom";
-import MainScreen from "./Components/MainScreen/MainScreen.";
-import "./Components/MainScreen/MobileScreen.css";
-import Footer from "./Components/Footer/Footer";
-import Inputs from "./Components/Inputs/Inputs";
-import Button from "./Components/Buttons/Buttons";
-import Axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
-import Header from "./Components/Header/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
+import Signup from "./Components/SignUp/SignUp";
+import Login from "./Components/Login/Login";
 
 function App() {
-  const [data, setData] = useState("");
-  useEffect(() => {
-    Axios.get("http://www.localhost:3000/")
-      .then((res) => res.data)
-      .then((res) => setData(res));
-  });
-
   return (
-    <div className="app">
-      <Header />
-      <MainScreen />
-
-      <div>
-        <Inputs type={"text"} value={"Enter User Name: "} input={undefined} />
-
-        <Inputs
-          type={"password"}
-          value={"Enter Password: "}
-          input={undefined}
-        />
-
-        <Button text="Sign In" btn={undefined} />
-      </div>
-
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
+      </Routes>
+    </BrowserRouter>
+    // <div>
+    //     Finish the assignment! Look at the comments in App.jsx as a starting point
+    // </div>
   );
 }
 
