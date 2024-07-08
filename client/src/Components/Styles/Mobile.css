@@ -3,6 +3,10 @@
     font-size: 22px;
     padding: 1rem;
   }
+
+  header > div a {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 501px) {
@@ -18,10 +22,18 @@
     font-size: 22px;
     padding: 1rem;
   }
+
+  header > div a {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .Heading1 {
     font-size: 22px;
     padding: 1rem;
+  }
+
+  header > div a {
+    font-size: 20px;
   }
 }
