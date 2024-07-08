@@ -1,0 +1,50 @@
+header {
+  padding: 20px;
+  background-color: #0a2239;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-color: #0a2239;
+  height: 2000px;
+}
+
+header > div a {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+header li a {
+  color: #fff;
+  /* font-weight: 100; */
+  padding: 20px;
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+}
+
+header li a:hover {
+  color: #ccc;
+}
+
+.job {
+  font-size: 20px;
+  text-align: center;
+  line-height: 5;
+}
+
+.conatainer {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Heading1 {
+  color: white;
+  font-size: 33px;
+  text-align: center;
+  margin-top: 140px;
+  letter-spacing: 3px;
+}
