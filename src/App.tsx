@@ -1,6 +1,5 @@
 import { Fragment } from "react/jsx-runtime";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import { BrowserRouter, Route } from "react-router-dom";
 import MainScreen from "./Components/MainScreen/MainScreen.";
 import "./Components/MainScreen/MobileScreen.css";
 import Footer from "./Components/Footer/Footer";
@@ -20,7 +19,7 @@ function App() {
   });
 
   return (
-    <div>
+    <div className="app">
       <Header />
       <MainScreen />
 
